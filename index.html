@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nail Art Community</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+    <style>
+        .nav-link:hover{
+            text-decoration: underline;
+        }
+        img.nail{
+            max-width: 400px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        img.nail:hover{
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+  <body class="bg-success-subtle">
+    <!-- bootstrap navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand text-light fw-bold" href="#">Nail Art Community</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link active text-light" aria-current="page" href="index.html" onclick="homeAlert()">Home</a>
+                <a class="nav-link text-light" href="form.html">Sign Up</a>
+                <a class="nav-link text-light" href="design.html">Design</a>
+            </div>
+            </div>
+        </div>
+    </nav>
+        
+        <div class="container mt-5 p-4 rounded">
+            <div class="row align-items-center">
+                <h1 class="fst-italic">Welcome to Nail Art Community</h1>
+                <div class="col-md-5 text-start">
+                    <img src="https://www.byrdie.com/thmb/H0QuJex8z_EbWv1YoLLXAmASQqM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/shortspringnails2-2b077768ac9048649e414997fe275ab0.png" style="width: 400px;" class="img rounded shadow nail" alt="home nail">
+                    <a href="https://en.wikipedia.org/wiki/Nail_art" target="_blank">
+                        <button type="button" class="btn btn-primary mt-4">More Information</button></a>
+
+                        <!-- teks -->
+                    </div>
+                    <div class="col-md-7 text-start mt-3">
+                        <p style="color:blueviolet">
+                            Nail art is a fun way to show your style. With colors, shapes, and designs, your nails 
+                            can be more than just nails — they become your canvas. Everyone can try nail art, 
+                            from simple polish to creative patterns!</p>
+                        <p style="color: brown;">
+                            Nail art can also be a form of self-expression and creativity. 
+                            With endless possibilities, you can mix colors, add accessories, 
+                            or follow the latest trends to make your nails truly unique.</p>
+
+                        <p><b>Types of Nail Shapes:</b></p>
+                        <ol style="color:darkmagenta;">
+                            <li>Almond</li>
+                            <li>Coffin / Ballerina</li>
+                            <li>Square</li>
+                            <li>Oval</li>
+                            <li>Stiletto</li>
+                            <li>Rounded</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+             function homeAlert(){
+                alert("Welcome aboard! You have just docked at the Nail Art Community 🚀✨")
+                }
+         </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>

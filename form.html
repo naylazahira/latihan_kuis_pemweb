@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nail Art Community Registration</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  </head>
+  <style>
+    .nav-link:hover{
+            text-decoration: underline;
+        }
+
+    body{
+        background-color:thistle;
+    }
+    .form-container{
+      max-width: 800px;
+      margin: 50px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow:0 16px 16px rgba(0,0,0,0.15);
+    }
+
+  </style>
+  <body>
+        <!-- bootstrap navbar -->
+         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="container-fluid">
+              <a class="navbar-brand text-light fw-bold" href="#">Nail Art Community</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                  <a class="nav-link active text-light" aria-current="page" href="index.html" onclick="homeAlert()">Home</a>
+                  <a class="nav-link text-light" href="form.html">Sign Up</a>
+                  <a class="nav-link text-light" href="design.html">Design</a>
+              </div>
+              </div>
+          </div>
+        </nav>
+          
+        <div class="container mt-5">
+          <din class=" row justify-content-center">
+            <div class="col-md-6">
+               <h2 class="fst-italic text-center">Join Nail Art Community</h2> 
+            </div>
+          </din>
+        </div>
+
+        <div class="form-container mt-2">
+            <form>
+              <div class="row mb-3 border-bottom pb-2">
+                <label for="fullname" class="col-sm-3 col-form-label">Full Name</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="fullname">
+                </div>
+                </div>
+
+              <div class="row mb-3 border-bottom pb-2">
+              <label for="DoB" class="col-sm-3 col-form-label">Date of Birth</label>
+                <div class="col-sm-9">
+                  <input type="date" class="form-control" id="DoB">
+                </div>
+              </div>
+
+              <div class="row mb-3 border-bottom pb-2">
+                <label for="Age" class="col-sm-3 col-form-label">Age Group</label>
+                  <div class="col-sm-9">
+                    <select class="form-select" aria-label="Default select example">
+                      <option selected>Select an age group</option>
+                      <option value="1">Young</option>
+                      <option value="2">Teenager</option>
+                      <option value="3">Adult</option>
+                    </select>
+                  </div>
+              </div>
+              
+              
+              <div class="mb-3 row border-bottom pb-2 ">
+                <label class="col-sm-3 col-form-label">Gender</label>
+                  <div class="col-sm-9">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+                      <label class="form-check-label" for="radioDefault1">
+                        Men
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault2" checked>
+                      <label class="form-check-label" for="radioDefault2">
+                        Women
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+                  <div class="mb-3 row border-bottom pb-2">
+                <label class="col-sm-3 col-form-label">Favorite Nail Style</label>
+                  <div class="col-sm-9">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                      <label class="form-check-label" for="checkDefault">
+                        Almond
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="checkChecked" checked>
+                      <label class="form-check-label" for="checkChecked">
+                        Coffin / Ballerina
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                      <label class="form-check-label" for="checkDefault">
+                        Square
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="checkChecked" checked>
+                      <label class="form-check-label" for="checkChecked">
+                        Oval
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="checkChecked" checked>
+                      <label class="form-check-label" for="checkChecked">
+                        Stiletto
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="checkChecked" checked>
+                      <label class="form-check-label" for="checkChecked">
+                        Rounded
+                      </label>
+                    </div>
+                    </div>
+                  </div>
+
+                  <div class="mb-3 row border-bottom pb-2">
+                    <label class="col-sm-3 col-form-label">City</label>
+                    <div class="col-sm-9">
+                      <input type="text" class="form-control" id="inputCity"></input>
+                    </div>
+                  </div>
+
+                  <div class="mb-3 row border-bottom pb-2">
+                    <label class="col-sm-3 col-form-label">Why Join Us?</label>
+                    <div class="col-sm-9">
+                      <textarea type="reason" class="form-control" id="inputReason"></textarea>
+                    </div>
+                  </div>
+
+
+                  <div class="mb-3 row" >
+                          <a class="btn btn-success" href="design.html" role="button">Submit</a>
+                  </div>
+                </form>
+         </div>
+
+         <script>
+          function homeAlert(){
+            alert("Welcome aboard! You have just docked at the Nail Art Community 🚀✨")
+          }
+         </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
